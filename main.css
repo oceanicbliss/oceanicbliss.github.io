@@ -30,13 +30,11 @@ table, tr, th, td, caption {
   position: fixed; 
   top: 5px;      
   right: 2000px;
-  border: 3px solid #73AD21;
 }
 
 .top-right-link-mobile {
   position: fixed; 
   top: 5px;      
   right: 100px;
-  border: 3px solid #73AD21;
 }
 
