@@ -26,3 +26,9 @@ table, tr, th, td, caption {
     padding: 0.5rem;
 }
 
+.top-right-link {
+  position: fixed; /* Fix the link's position regardless of scrolling */
+  top: 10px;      /* Adjust as needed for desired distance from top */
+  right: 10px;     /* Adjust as needed for desired distance from right */
+}
+
