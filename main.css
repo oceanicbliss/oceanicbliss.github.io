@@ -27,13 +27,13 @@ table, tr, th, td, caption {
 }
 
 .top-right-link-desktop {
-  position: fixed; 
+  position: absolute; 
   top: 5px;      
   right: 100px;
 }
 
 .top-right-link-mobile {
-  position: fixed; 
+  position: absolute; 
   top: 5px;      
   right: 100px;
 }
