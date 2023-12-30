@@ -61,15 +61,15 @@ authenticate = true;
         logoutLink.textContent = 'LOGOUT';
         logoutLink.style.position = 'fixed';
         logoutLink.style.top = '0px';
-        logoutLink.style.right = '50px';
+        logoutLink.style.right = '5px';
         document.body.appendChild(logoutLink);
 
-        const title = document.createElement('b');
-        title.textContent = 'Low Price Scanner';
-        title.style.position = 'fixed';
-        title.style.top = '50px';
-        title.style.left = '5px';
-        document.body.appendChild(title);
+        //const title = document.createElement('b');
+        //title.textContent = 'Low Price Scanner';
+        //title.style.position = 'fixed';
+        //title.style.top = '65px';
+        //title.style.left = '5px';
+        //document.body.appendChild(title);
   
         const iframe = document.createElement('iframe');
         iframe.src = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQkfdM0tANp3tURcIJnDdqqYnGB5OnAFIbvkFohs_YqMMK6jJH4fOuCGrfvoWZBlvl-ttEqelG6XwA8/pubhtml?widget=true&amp;headers=false';
