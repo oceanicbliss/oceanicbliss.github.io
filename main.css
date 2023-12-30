@@ -84,7 +84,7 @@ h2 {
 #signup-form button {
     margin: 5px;
 }
-@media (max-width: 900px) { /* Hide form on mobile screens */
+@media (max-width: 1000px) { /* Hide form on mobile screens, min1000 max1300 */ 
     #signup-form {
         display: none;
     }
