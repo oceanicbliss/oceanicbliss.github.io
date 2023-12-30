@@ -27,3 +27,50 @@ table, tr, th, td, caption {
 }
 
 
+#login-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    padding: 0px;
+    background-color: #333;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+#login-form legend {
+    color: white; /* Set the desired color for the legend text */
+}
+#login-form input[type="password"] {
+    /* Specific styles for password input */
+    width: 90px; /* Set the desired width for the password input box */
+    margin: 5px;
+}
+#login-form button {
+    margin: 5px;
+}
+
+
+#signup-form {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0px;
+    padding: 0px;
+    background-color: #333;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+#signup-form legend {
+    color: white; /* Set the desired color for the legend text */
+}
+#signup-form input[type="password"] {
+    /* Specific styles for password input */
+    width: 90px; /* Set the desired width for the password input box */
+    margin: 5px;
+}
+#signup-form button {
+    margin: 5px;
+}
+
