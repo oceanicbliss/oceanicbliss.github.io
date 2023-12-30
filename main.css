@@ -54,7 +54,7 @@ h2 {
 }
 #login-form input[type="password"] {
     /* Specific styles for password input */
-    width: 90px; /* Set the desired width for the password input box */
+    width: 70px; /* Set the desired width for the password input box */
     margin: 5px;
 }
 #login-form button {
@@ -78,10 +78,15 @@ h2 {
 }
 #signup-form input[type="password"] {
     /* Specific styles for password input */
-    width: 90px; /* Set the desired width for the password input box */
+    width: 70px; /* Set the desired width for the password input box */
     margin: 5px;
 }
 #signup-form button {
     margin: 5px;
+}
+@media (max-width: 767px) { /* Hide form on mobile screens */
+    #signup-form {
+        display: none;
+    }
 }
 
