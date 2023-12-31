@@ -127,9 +127,9 @@ function denied() {
       function checkLoginStatus() {
           const loggedIn = getCookie('loggedIn');
           if (loggedIn === 'true') {
-              window.alert(loggedIn);
+              window.alert("Logged In");
           } else {
-              window.alert(loggedIn);
+              window.alert("Logged Out");
           }
           if (loggedIn === 'true') {
             const logoutLink = document.createElement('a');
