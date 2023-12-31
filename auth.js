@@ -57,7 +57,6 @@ onLogin();
 //////////////////////////////////////////////////////////////////////////////////////////
       // Respond to Firebase's Authentication
       if (authenticate === true) {
-        
         const title = document.createElement('b');
         title.textContent = 'LOGGING IN....';
         title.style.position = 'fixed';
@@ -69,6 +68,8 @@ onLogin();
         setTimeout(() => {
         document.body.removeChild(title);
         }, 5000);
+
+        checkLoginStatus();
       }
 // ...
 })
