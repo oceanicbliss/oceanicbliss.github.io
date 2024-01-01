@@ -1,0 +1,92 @@
+html {
+    font-size: 22px
+}
+
+body {
+    background-color:#333;
+    color:whitesmoke;
+}
+
+a   {
+    color:aliceblue;
+}
+
+a:visited {
+    color:lightgray;
+}
+
+a:hover, a:active {
+    color:#eee;
+}
+
+table, tr, th, td, caption {
+    border: 1px solid #eee;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+h1 {
+    margin-top: 15px;
+    text-align: left;
+    font-size: 30px
+}
+h2 {
+    margin-top: 0px;
+    text-align: left;
+    font-size: 12px
+}
+
+
+#login-form {
+    position: fixed;
+    top: 5px;
+    left: 470px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #333;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+#login-form legend {
+    color: white; /* Set the desired color for the legend text */
+}
+#login-form input[type="password"] {
+    /* Specific styles for password input */
+    width: 70px; /* Set the desired width for the password input box */
+    margin: 5px;
+}
+#login-form button {
+    margin: 5px;
+}
+
+
+#signup-form {
+    position: fixed;
+    top: 5px;
+    right: 100px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #333;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+#signup-form legend {
+    color: white; /* Set the desired color for the legend text */
+}
+#signup-form input[type="password"] {
+    /* Specific styles for password input */
+    width: 70px; /* Set the desired width for the password input box */
+    margin: 5px;
+}
+#signup-form button {
+    margin: 5px;
+}
+@media (max-width: 1000px) { /* Hide form on mobile screens, min1000 max1300 */ 
+    #signup-form {
+        display: none;
+    }
+}
+
