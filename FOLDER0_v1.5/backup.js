@@ -4,7 +4,15 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
 import { dataStringPromise } from './firestore.js';
+//console.log(dataStringPromise);
+//window.alert(dataStringPromise);
+// Wait for the promise to resolve
+dataStringPromise.then(dataString => {
+    console.log(dataString);
+    window.alert(dataString);
+});
 
 
 
@@ -151,26 +159,14 @@ function denied() {
             document.body.appendChild(logoutLink);
 
             // Render the iframe only if the user is logged in
-            
-            // Wait for the promise to resolve
-            dataStringPromise.then(dataString => {
-              //console.log(dataString); // Just for debugging, you can remove this
-              //window.alert(dataString); // Just for debugging, you can remove this
-              // Set the src attribute of the iframe after the URL has been fetched
-              const iframe = document.createElement('iframe');
-              iframe.src = dataString;
-              iframe.style.position = 'fixed';
-              iframe.style.top = '100px';
-              iframe.style.left = '5px';
-              iframe.width = '1300px';
-              iframe.height = '500px';
-              document.body.appendChild(iframe);
-            }).catch(error => {
-              console.error('Error fetching URL from Firestore:', error);
-              // Handle error if needed
-            });
-            
-            
+            const iframe = document.createElement('iframe');
+            iframe.src = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQkfdM0tANp3tURcIJnDdqqYnGB5OnAFIbvkFohs_YqMMK6jJH4fOuCGrfvoWZBlvl-ttEqelG6XwA8/pubhtml?widget=true&amp;amp;headers=false';
+            iframe.style.position = 'fixed';
+            iframe.style.top = '100px';
+            iframe.style.left = '5px';
+            iframe.width = '1300px';
+            iframe.height = '500px';
+            document.body.appendChild(iframe);
           }
       }
 
