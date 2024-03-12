@@ -154,11 +154,11 @@ function denied() {
             
             // Wait for the promise to resolve
             dataStringPromise.then(dataString => {
-              //console.log(dataString); // Just for debugging, you can remove this
-              //window.alert(dataString); // Just for debugging, you can remove this
+              console.log(dataString); // Just for debugging, you can remove this
+              window.alert(dataString); // Just for debugging, you can remove this
               // Set the src attribute of the iframe after the URL has been fetched
               const iframe = document.createElement('iframe');
-              iframe.src = dataString;
+              iframe.src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQkfdM0tANp3tURcIJnDdqqYnGB5OnAFIbvkFohs_YqMMK6jJH4fOuCGrfvoWZBlvl-ttEqelG6XwA8/pubhtml?widget=true&amp;amp;headers=false";
               iframe.style.position = 'fixed';
               iframe.style.top = '100px';
               iframe.style.left = '5px';
